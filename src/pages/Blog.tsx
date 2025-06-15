@@ -7,21 +7,21 @@ const blogPosts = [
     title: "5 Tips for a Healthier Lifestyle",
     date: "2024-05-01",
     excerpt: "Adopt these easy changes for a more energetic and healthier life.",
-    image: "/placeholder.svg"
+    image: "/Blog/event1.png"
   },
   {
     id: 2,
     title: "How Preventive Health Checks Save Lives",
     date: "2024-06-01",
     excerpt: "Discover why regular screenings are critical for early detection.",
-    image: "/placeholder.svg"
+    image: "/Blog/event2.png"
   },
   {
     id: 3,
     title: "Understanding Your Blood Test",
     date: "2024-04-15",
     excerpt: "A doctor's guide to making sense of your blood report.",
-    image: "/placeholder.svg"
+    image: "/Blog/event3.png"
   }
 ];
 

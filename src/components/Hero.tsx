@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Heart, Shield, Clock } from "lucide-react";
 import { useWhatsapp } from "@/components/WhatsappWidget";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const { openChat } = useWhatsapp();
@@ -38,14 +39,18 @@ const Hero = () => {
               <Button
                 size="lg"
                 className="bg-white text-blue-600 hover:bg-blue-50 font-semibold px-8"
-                onClick={() => openChat("Hi! I want to book a package.")}
+                onClick={() => openChat("হ্যালো! আমি হেলথ প্যাকেজ বা ডাক্তার অ্যাপয়েন্টমেন্ট সম্পর্কে জানতে চাই। অনুগ্রহ করে বিস্তারিত জানাবেন?.")}
               >
                 Book Appointment
               </Button>
-              <Button size="lg"
-                className="bg-white text-blue-600 hover:bg-blue-50 font-semibold px-8">
-                Health Packages
-              </Button>
+              <Link to="/health-package">
+                <Button 
+                  size="lg"
+                  className="bg-white text-blue-600 hover:bg-blue-50 font-semibold px-8"
+                >
+                  Health Packages
+                </Button>
+              </Link>
             </div>
           </div>
           <div className="relative">

@@ -1,7 +1,6 @@
-
 import { NavLink, useLocation } from "react-router-dom";
 import { cn } from "@/lib/utils";
-import { Heart, Contact, Home, User, Newspaper } from "lucide-react";
+import { Heart, Contact, Home, User, Newspaper, Image as GalleryIcon } from "lucide-react";
 
 const navItems = [
   { name: "Home", path: "/", icon: Home },
@@ -9,6 +8,7 @@ const navItems = [
   { name: "Blog", path: "/blog", icon: Newspaper },
   { name: "Doctor", path: "/doctor", icon: User },
   { name: "Contact", path: "/contact", icon: Contact },
+  { name: "Gallery", path: "/gallery", icon: GalleryIcon },
 ];
 
 const Navbar = () => {
@@ -18,11 +18,10 @@ const Navbar = () => {
     <nav className="bg-white shadow-md">
       <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
         <div className="flex items-center gap-2">
-  <div className="flex items-center gap-3">
-  <img src="/logo.jpg" alt="Core Diagnostics Logo" className="h-10 w-auto sm:h-15" />
-</div>
-
-</div>
+          <div className="flex items-center gap-3">
+            <img src="/logo.jpg" alt="Core Diagnostics Logo" className="h-10 w-auto sm:h-15" />
+          </div>
+        </div>
 
         <div className="flex space-x-2 md:space-x-4">
           {navItems.map(item => {

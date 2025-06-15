@@ -1,10 +1,39 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { useWhatsapp } from "@/components/WhatsappWidget";
 
 const Contact = () => {
   const { openChat } = useWhatsapp();
+
+  const socialLinks = [
+    {
+      name: 'Facebook',
+      icon: <FaFacebookF />,
+      url: 'https://www.facebook.com/CoreLabBD',
+      bg: 'bg-[#3b5998]'
+    },
+    {
+      name: 'Twitter',
+      icon: <FaTwitter />,
+      url: 'https://twitter.com/your-actual-page',
+      bg: 'bg-[#1da1f2]'
+    },
+    {
+      name: 'LinkedIn',
+      icon: <FaLinkedinIn />,
+      url: 'https://linkedin.com/your-actual-page',
+      bg: 'bg-[#0077b5]'
+    },
+    {
+      name: 'Instagram',
+      icon: <FaInstagram />,
+      url: 'https://instagram.com/your-actual-page',
+      bg: 'bg-[#e1306c]'
+    },
+  ];
+
   return (
     <section className="py-16 bg-blue-600 text-white">
       <div className="max-w-7xl mx-auto px-4">
@@ -60,6 +89,22 @@ const Contact = () => {
                     </div>
                   </div>
                 </div>
+                <div className="mt-6">
+                  <h4 className="font-semibold text-lg mb-2">Follow Us</h4>
+                  <div className="flex gap-4">
+                    {socialLinks.map((link, idx) => (
+                      <a
+                        key={idx}
+                        href={link.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`w-10 h-10 ${link.bg} flex items-center justify-center rounded-full hover:opacity-90 transition`}
+                      >
+                        {link.icon}
+                      </a>
+                    ))}
+                  </div>
+                </div>
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button
@@ -110,6 +155,9 @@ const Contact = () => {
               </CardContent>
             </Card>
           </div>
+        </div>
+        <div className="text-center mt-16 text-sm text-white/70">
+          Developed by <a href="https://synacto.de/en" className="underline hover:text-white">Synacto</a>
         </div>
       </div>
     </section>
