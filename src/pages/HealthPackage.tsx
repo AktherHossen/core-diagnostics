@@ -1,9 +1,8 @@
 import Navbar from "@/components/Navbar";
-import Hero from "@/components/Hero";
 import PackageCard from "@/components/PackageCard";
 import Features from "@/components/Features";
 import Contact from "@/components/Contact";
-import { Heart, Shield, Clock, Award } from "lucide-react";
+import { Heart, Shield, Award } from "lucide-react";
 
 const healthPackages = [
   {
@@ -71,26 +70,19 @@ const healthPackages = [
   }
 ];
 
-const Index = () => {
+const HealthPackage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       <Navbar />
-      <Hero />
-      {/* Packages Section */}
-      <section className="py-16 px-4 max-w-7xl mx-auto">
+      <section className="py-12 px-4 max-w-7xl mx-auto" id="package">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Choose Your Health Package
-          </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Comprehensive health screenings designed to detect potential health issues early 
-            and keep you on the path to optimal wellness.
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">Health Packages</h2>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            Choose from our range of diagnostic health packages tailored for preventive care and complete wellness.
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {healthPackages.map((pkg) => (
-            <PackageCard key={pkg.id} package={pkg} />
-          ))}
+          {healthPackages.map(pkg => <PackageCard key={pkg.id} package={pkg} />)}
         </div>
       </section>
       <Features />
@@ -98,5 +90,4 @@ const Index = () => {
     </div>
   );
 };
-
-export default Index;
+export default HealthPackage;
