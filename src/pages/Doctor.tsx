@@ -41,10 +41,11 @@ const specializations = [
 ];
 
 const Doctor = () => {
-  const [selectedSpecialty, setSelectedSpecialty] = useState<string | "">("");
+  // Default to "all" instead of ""
+  const [selectedSpecialty, setSelectedSpecialty] = useState<string>("all");
 
   const filteredDoctors =
-    selectedSpecialty && selectedSpecialty !== "All"
+    selectedSpecialty && selectedSpecialty !== "all"
       ? doctors.filter((doc) => doc.specialty === selectedSpecialty)
       : doctors;
 
@@ -71,7 +72,8 @@ const Doctor = () => {
                 <SelectValue placeholder="All Specializations" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="">All</SelectItem>
+                {/* Use value="all" instead of value="" */}
+                <SelectItem value="all">All</SelectItem>
                 {specializations.map((spec) => (
                   <SelectItem key={spec} value={spec}>
                     {spec}
