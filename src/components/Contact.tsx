@@ -1,11 +1,10 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
-+import { useWhatsapp } from "@/components/WhatsappWidget";
+import { useWhatsapp } from "@/components/WhatsappWidget";
 
 const Contact = () => {
-+  const { openChat } = useWhatsapp();
+  const { openChat } = useWhatsapp();
   return (
     <section className="py-16 bg-blue-600 text-white">
       <div className="max-w-7xl mx-auto px-4">
@@ -15,7 +14,6 @@ const Contact = () => {
             Book your health package today and take the first step towards a healthier, happier you.
           </p>
         </div>
-        
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <div className="space-y-8">
@@ -29,7 +27,6 @@ const Contact = () => {
                       <div className="text-blue-100">123 Medical Plaza, Health District, City 12345</div>
                     </div>
                   </div>
-                  
                   <div className="flex items-center gap-3">
                     <Phone className="h-5 w-5 text-blue-200" />
                     <div>
@@ -37,7 +34,6 @@ const Contact = () => {
                       <div className="text-blue-100">24/7 Helpline Available</div>
                     </div>
                   </div>
-                  
                   <div className="flex items-center gap-3">
                     <Mail className="h-5 w-5 text-blue-200" />
                     <div>
@@ -45,7 +41,6 @@ const Contact = () => {
                       <div className="text-blue-100">Get instant support</div>
                     </div>
                   </div>
-                  
                   <div className="flex items-center gap-3">
                     <Clock className="h-5 w-5 text-blue-200" />
                     <div>
@@ -55,29 +50,23 @@ const Contact = () => {
                   </div>
                 </div>
               </div>
-              
               <div className="flex flex-col sm:flex-row gap-4">
--                <Button size="lg" className="bg-white text-blue-600 hover:bg-blue-50 font-semibold px-8">
--                  Book Appointment
--                </Button>
-+                <Button
-+                  size="lg"
-+                  className="bg-white text-blue-600 hover:bg-blue-50 font-semibold px-8"
-+                  onClick={() => openChat("Hi! I want to book an appointment.")}
-+                >
-+                  Book Appointment
-+                </Button>
+                <Button
+                  size="lg"
+                  className="bg-white text-blue-600 hover:bg-blue-50 font-semibold px-8"
+                  onClick={() => openChat("Hi! I want to book an appointment.")}
+                >
+                  Book Appointment
+                </Button>
                 <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600 font-semibold px-8">
                   Download Brochure
                 </Button>
               </div>
             </div>
           </div>
-          
           <Card className="bg-white/10 backdrop-blur-sm border-white/20">
             <CardContent className="p-8">
               <h3 className="text-2xl font-bold mb-6 text-white">Special Offers</h3>
-              
               <div className="space-y-4">
                 <div className="bg-white/10 rounded-lg p-4">
                   <div className="flex justify-between items-center mb-2">
@@ -86,7 +75,6 @@ const Contact = () => {
                   </div>
                   <p className="text-blue-100 text-sm">Book before 10 AM and save on all packages</p>
                 </div>
-                
                 <div className="bg-white/10 rounded-lg p-4">
                   <div className="flex justify-between items-center mb-2">
                     <span className="font-semibold">Family Package</span>
@@ -94,7 +82,6 @@ const Contact = () => {
                   </div>
                   <p className="text-blue-100 text-sm">Special rates for 3+ family members</p>
                 </div>
-                
                 <div className="bg-white/10 rounded-lg p-4">
                   <div className="flex justify-between items-center mb-2">
                     <span className="font-semibold">Corporate Wellness</span>
@@ -103,7 +90,6 @@ const Contact = () => {
                   <p className="text-blue-100 text-sm">Bulk bookings for companies</p>
                 </div>
               </div>
-              
               <div className="mt-6 p-4 bg-yellow-500/20 rounded-lg border border-yellow-400/30">
                 <p className="text-center font-medium">
                   🎉 Limited Time: Free home collection for all packages!
