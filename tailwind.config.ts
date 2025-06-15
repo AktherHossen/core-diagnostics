@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -19,6 +20,12 @@ export default {
 		},
 		extend: {
 			colors: {
+				// Brand colors from logo (approximated)
+				brand: {
+					DEFAULT: '#18b497', // teal green
+					blue: '#31439a',    // blue from leaf
+					gray: '#404153',    // charcoal gray from text
+				},
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
@@ -94,3 +101,4 @@ export default {
 	},
 	plugins: [require("tailwindcss-animate")],
 } satisfies Config;
+
