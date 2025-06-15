@@ -1,8 +1,10 @@
 
 import { Button } from "@/components/ui/button";
 import { Heart, Shield, Clock } from "lucide-react";
++import { useWhatsapp } from "@/components/WhatsappWidget";
 
 const Hero = () => {
++  const { openChat } = useWhatsapp();
   return (
     <div className="relative bg-gradient-to-r from-blue-600 to-blue-800 text-white">
       <div className="absolute inset-0 bg-black/20"></div>
@@ -37,9 +39,16 @@ const Hero = () => {
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="bg-white text-blue-600 hover:bg-blue-50 font-semibold px-8">
-                Book Your Package
-              </Button>
+-              <Button size="lg" className="bg-white text-blue-600 hover:bg-blue-50 font-semibold px-8">
+-                Book Your Package
+-              </Button>
++              <Button
++                size="lg"
++                className="bg-white text-blue-600 hover:bg-blue-50 font-semibold px-8"
++                onClick={() => openChat("Hi! I want to book a package.")}
++              >
++                Book Appointment
++              </Button>
               <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600 font-semibold px-8">
                 Learn More
               </Button>

@@ -2,8 +2,10 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
++import { useWhatsapp } from "@/components/WhatsappWidget";
 
 const Contact = () => {
++  const { openChat } = useWhatsapp();
   return (
     <section className="py-16 bg-blue-600 text-white">
       <div className="max-w-7xl mx-auto px-4">
@@ -55,9 +57,16 @@ const Contact = () => {
               </div>
               
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="bg-white text-blue-600 hover:bg-blue-50 font-semibold px-8">
-                  Book Appointment
-                </Button>
+-                <Button size="lg" className="bg-white text-blue-600 hover:bg-blue-50 font-semibold px-8">
+-                  Book Appointment
+-                </Button>
++                <Button
++                  size="lg"
++                  className="bg-white text-blue-600 hover:bg-blue-50 font-semibold px-8"
++                  onClick={() => openChat("Hi! I want to book an appointment.")}
++                >
++                  Book Appointment
++                </Button>
                 <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600 font-semibold px-8">
                   Download Brochure
                 </Button>

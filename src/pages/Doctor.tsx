@@ -1,4 +1,3 @@
-
 import Navbar from "@/components/Navbar";
 import { useState } from "react";
 import {
@@ -8,7 +7,7 @@ import {
   SelectContent,
   SelectItem,
 } from "@/components/ui/select";
-import WhatsappWidget from "@/components/WhatsappWidget";
+import { useWhatsapp } from "@/components/WhatsappWidget";
 
 const doctors = [
   {
@@ -45,19 +44,20 @@ const WHATSAPP_PHONE = "15551234567"; // Use the same WhatsApp number as in the 
 
 const Doctor = () => {
   const [selectedSpecialty, setSelectedSpecialty] = useState<string>("all");
+  const { openChat } = useWhatsapp();
 
   const filteredDoctors =
     selectedSpecialty && selectedSpecialty !== "all"
       ? doctors.filter((doc) => doc.specialty === selectedSpecialty)
       : doctors;
 
-  const getWhatsAppLink = (doctorName: string) =>
-    `https://wa.me/${WHATSAPP_PHONE}?text=Hi!%20I%20want%20to%20book%20an%20appointment%20with%20${encodeURIComponent(doctorName)}.`;
+  const handleBookAppointment = (doctorName: string) => {
+    openChat(`Hi! I want to book an appointment with ${doctorName}.`);
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       <Navbar />
-      <WhatsappWidget />
       <section className="py-12 px-4 max-w-5xl mx-auto">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-900 mb-3">
@@ -107,14 +107,12 @@ const Doctor = () => {
                 {doc.experience} experience
               </div>
               <p className="text-gray-600 text-sm mb-4">{doc.bio}</p>
-              <a
-                href={getWhatsAppLink(doc.name)}
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                onClick={() => handleBookAppointment(doc.name)}
                 className="inline-block px-4 py-1 bg-green-500 text-white rounded hover:bg-green-600 font-semibold text-sm transition-colors"
               >
                 Book Appointment
-              </a>
+              </button>
             </div>
           ))}
         </div>

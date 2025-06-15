@@ -3,6 +3,8 @@ import PackageCard from "@/components/PackageCard";
 import Features from "@/components/Features";
 import Contact from "@/components/Contact";
 import { Heart, Shield, Award } from "lucide-react";
+import { useWhatsapp } from "@/components/WhatsappWidget";
+import { Button } from "@/components/ui/button";
 
 const healthPackages = [
   {
@@ -71,6 +73,7 @@ const healthPackages = [
 ];
 
 const HealthPackage = () => {
+  const { openChat } = useWhatsapp();
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       <Navbar />
@@ -83,6 +86,15 @@ const HealthPackage = () => {
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {healthPackages.map(pkg => <PackageCard key={pkg.id} package={pkg} />)}
+        </div>
+        <div className="flex justify-center mt-12">
+          <Button
+            size="lg"
+            className="bg-green-500 text-white hover:bg-green-600 font-semibold px-8"
+            onClick={() => openChat("Hi! I want to book a health package.")}
+          >
+            Book Appointment
+          </Button>
         </div>
       </section>
       <Features />

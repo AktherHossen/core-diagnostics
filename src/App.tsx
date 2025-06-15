@@ -10,6 +10,8 @@ import HealthPackage from "./pages/HealthPackage";
 import Blog from "./pages/Blog";
 import Doctor from "./pages/Doctor";
 import ContactPage from "./pages/ContactPage";
+-import WhatsappWidget from "@/components/WhatsappWidget";
++import { WhatsappProvider } from "@/components/WhatsappWidget";
 
 const queryClient = new QueryClient();
 
@@ -18,16 +20,28 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/health-package" element={<HealthPackage />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/doctor" element={<Doctor />} />
-          <Route path="/contact" element={<ContactPage />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
+-      <BrowserRouter>
+-        <Routes>
+-          <Route path="/" element={<Index />} />
+-          <Route path="/health-package" element={<HealthPackage />} />
+-          <Route path="/blog" element={<Blog />} />
+-          <Route path="/doctor" element={<Doctor />} />
+-          <Route path="/contact" element={<ContactPage />} />
+-          <Route path="*" element={<NotFound />} />
+-        </Routes>
+-      </BrowserRouter>
++      <WhatsappProvider>
++        <BrowserRouter>
++          <Routes>
++            <Route path="/" element={<Index />} />
++            <Route path="/health-package" element={<HealthPackage />} />
++            <Route path="/blog" element={<Blog />} />
++            <Route path="/doctor" element={<Doctor />} />
++            <Route path="/contact" element={<ContactPage />} />
++            <Route path="*" element={<NotFound />} />
++          </Routes>
++        </BrowserRouter>
++      </WhatsappProvider>
     </TooltipProvider>
   </QueryClientProvider>
 );
