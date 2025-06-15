@@ -2,73 +2,204 @@ import Navbar from "@/components/Navbar";
 import PackageCard from "@/components/PackageCard";
 import Features from "@/components/Features";
 import Contact from "@/components/Contact";
-import { Heart, Shield, Award } from "lucide-react";
+import { Heart, Shield, Award, Stethoscope, Thermometer, Eye, Brain, Droplet, ActivitySquare } from "lucide-react";
 import { useWhatsapp } from "@/components/WhatsappWidget";
 import { Button } from "@/components/ui/button";
 
 const healthPackages = [
   {
     id: 1,
-    name: "Basic Health Checkup",
-    price: "$99",
-    originalPrice: "$129",
+    name: "Basic Health Package",
+    price: "৳5,800",
+    originalPrice: "৳8,320",
     duration: "2-3 Hours",
-    tests: 25,
+    tests: 15,
     description: "Essential health screening for general wellness monitoring",
     features: [
-      "Complete Blood Count (CBC)",
-      "Lipid Profile",
-      "Blood Sugar Test",
-      "Kidney Function Test",
-      "Liver Function Test",
-      "Thyroid Profile",
-      "Vitamin D & B12",
-      "ECG & Chest X-Ray"
+      "CBC with ESR",
+      "Fasting Blood Sugar",
+      "Fasting Lipid Profile",
+      "HBsAg Screening",
+      "S. Bilirubin",
+      "SGPT",
+      "Uric Acid",
+      "S. Creatinine",
+      "Urine R/M/E",
+      "TSH",
+      "Blood Grouping and Rh Factor",
+      "X-Ray Chest P/A View",
+      "USG Whole Abdomen",
+      "ECG",
+      "Doctor's Consultation"
     ],
     popular: false,
     icon: Heart
   },
   {
     id: 2,
-    name: "Comprehensive Health Package",
-    price: "$199",
-    originalPrice: "$259",
+    name: "Executive Health Check Up - Female (40+)",
+    price: "৳9,000",
+    originalPrice: "৳12,440",
     duration: "4-5 Hours",
-    tests: 45,
-    description: "Thorough health assessment with advanced diagnostic tests",
+    tests: 16,
+    description: "Complete health checkup designed for women above 40",
     features: [
-      "All Basic Package Tests",
-      "Cardiac Risk Assessment",
-      "Diabetes Panel",
-      "Cancer Markers",
-      "Bone Health Analysis",
-      "Stress & Hormone Tests",
-      "Ultrasound Abdomen",
-      "Consultation with Specialist"
+      "CBC with ESR",
+      "Fasting Blood Sugar",
+      "Fasting Lipid Profile",
+      "HBsAg Screening",
+      "S. Bilirubin",
+      "SGPT",
+      "Uric Acid",
+      "S. Creatinine",
+      "Urine R/M/E",
+      "TSH",
+      "Blood Grouping and Rh Factor",
+      "X-Ray Chest P/A View",
+      "USG Whole Abdomen",
+      "USG of Both Breasts",
+      "Pap's Smear",
+      "ECG"
     ],
     popular: true,
     icon: Shield
   },
   {
     id: 3,
-    name: "Executive Health Screening",
-    price: "$299",
-    originalPrice: "$389",
+    name: "Executive Health Check Up - Male (40+)",
+    price: "৳8,900",
+    originalPrice: "৳12,835",
     duration: "Full Day",
-    tests: 65,
-    description: "Premium health package for busy professionals and executives",
+    tests: 17,
+    description: "Premium health screening tailored for men above 40",
     features: [
-      "All Comprehensive Tests",
-      "Advanced Cardiac Screening",
-      "Full Body MRI Scan",
-      "Eye & ENT Examination",
-      "Nutritionist Consultation",
-      "Fitness Assessment",
-      "Mental Health Screening",
-      "Personalized Health Report"
+      "CBC with ESR",
+      "Fasting Blood Sugar and 2 hrs ABF",
+      "HbA1C",
+      "Fasting Lipid Profile",
+      "S. Electrolyte",
+      "S. Bilirubin",
+      "SGPT",
+      "Uric Acid",
+      "S. Creatinine",
+      "Urine R/M/E",
+      "TSH",
+      "PSA",
+      "Ft4",
+      "X-Ray Chest P/A View",
+      "USG Whole Abdomen with PVR, Prostate and MCC",
+      "HBsAg Screening",
+      "ECG"
     ],
     popular: false,
     icon: Award
+  },
+  {
+    id: 4,
+    name: "Diabetic Screening - Basic",
+    price: "৳2,400",
+    originalPrice: "৳3,470",
+    duration: "1-2 Hours",
+    tests: 7,
+    description: "Comprehensive diabetes risk evaluation",
+    features: [
+      "Glucose, fasting",
+      "Glucose, 2 hrs post prandial",
+      "Creatinine",
+      "ALT (SGPT)",
+      "Urine Routine Examination",
+      "HbA1C",
+      "ECG"
+    ],
+    popular: false,
+    icon: Thermometer
+  },
+  {
+    id: 5,
+    name: "Liver Screening",
+    price: "৳3,900",
+    originalPrice: "৳5,685",
+    duration: "2 Hours",
+    tests: 10,
+    description: "Liver function and viral infection assessment",
+    features: [
+      "Bilirubin, Total",
+      "ALT (SGPT)",
+      "AST (SGOT)",
+      "Alkaline Phosphatase (ALP)",
+      "CBC",
+      "PT (Prothrombin time)",
+      "Anti-HCV",
+      "HBsAg",
+      "USG Upper Abdomen"
+    ],
+    popular: false,
+    icon: Droplet
+  },
+  {
+    id: 6,
+    name: "Cardiac Health Package (Screening)",
+    price: "৳5,500",
+    originalPrice: "৳7,580",
+    duration: "3-4 Hours",
+    tests: 11,
+    description: "Heart health screening for risk detection and prevention",
+    features: [
+      "CBC",
+      "FBS",
+      "Lipid Profile",
+      "HBsAg",
+      "SGPT",
+      "Creatinine",
+      "Urine R/M/E",
+      "X-Ray Chest P/A View",
+      "ECG",
+      "Spirometry",
+      "Echo 2D"
+    ],
+    popular: false,
+    icon: ActivitySquare
+  },
+  {
+    id: 7,
+    name: "Renal Screening",
+    price: "৳5,300",
+    originalPrice: "৳7,465",
+    duration: "2-3 Hours",
+    tests: 10,
+    description: "Kidney function and urinary health profile",
+    features: [
+      "CBC",
+      "FBS",
+      "Creatinine",
+      "Urine R/M/E",
+      "X-ray KUB",
+      "Uric Acid",
+      "Electrolytes",
+      "Blood Urea",
+      "Urine for Micro albumin",
+      "USG KUB, PVR and Prostate"
+    ],
+    popular: false,
+    icon: Brain
+  },
+  {
+    id: 8,
+    name: "Thyroid Health Package",
+    price: "৳5,200",
+    originalPrice: "৳7,320",
+    duration: "1-2 Hours",
+    tests: 5,
+    description: "Comprehensive thyroid function evaluation",
+    features: [
+      "TSH",
+      "FT3",
+      "FT4",
+      "Anti-Thyroid Antibody",
+      "USG of Thyroid Gland"
+    ],
+    popular: false,
+    icon: Stethoscope
   }
 ];
 
@@ -102,4 +233,5 @@ const HealthPackage = () => {
     </div>
   );
 };
+
 export default HealthPackage;

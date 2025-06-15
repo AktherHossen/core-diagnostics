@@ -42,8 +42,9 @@ const Hero = () => {
               >
                 Book Appointment
               </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600 font-semibold px-8">
-                Learn More
+              <Button size="lg"
+                className="bg-white text-blue-600 hover:bg-blue-50 font-semibold px-8">
+                Health Packages
               </Button>
             </div>
           </div>

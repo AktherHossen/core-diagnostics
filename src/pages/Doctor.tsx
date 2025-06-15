@@ -1,4 +1,4 @@
-import Navbar from "@/components/Navbar";
+import Navbar from "../components/Navbar";
 import { useState } from "react";
 import {
   Select,
@@ -6,41 +6,195 @@ import {
   SelectValue,
   SelectContent,
   SelectItem,
-} from "@/components/ui/select";
-import { useWhatsapp } from "@/components/WhatsappWidget";
+} from "../components/ui/select";
+import { useWhatsapp } from "../components/WhatsappWidget";
 
 const doctors = [
   {
     id: 1,
-    name: "Dr. Kavita Rao",
-    specialty: "Pathologist",
-    experience: "12 years",
-    image: "/placeholder.svg",
-    bio: "Expert in diagnostic medicine and clinical pathology.",
+    name: "Dr. Zahedul Hoque",
+    specialty: "Medicine and Diabetes Specialist",
+    image: "Images/dr_zahedul_hoque.jpg.jpeg",
+    bio: "MBBS, MD (Medical) – BRMCM. CEO, CoreMed Diagnostics. Member, American College of Physicians.",
+    timing: "Friday: 2:00 PM – 8:00 PM",
+    regNo: "A-96190"
   },
   {
     id: 2,
-    name: "Dr. Sameer Kulkarni",
-    specialty: "Radiologist",
-    experience: "10 years",
-    image: "/placeholder.svg",
-    bio: "Specializes in advanced imaging and preventive screening.",
+    name: "Dr. Abu Ishak Md. Arafat",
+    specialty: "Medicine and Diabetes Specialist",
+    image: "Images/dr_abu_ishak_md._arafat.jpg.jpeg",
+    bio: "MBBS, BCS (Health), Endocrinology (FP). CMOSHMC.",
+    timing: "Saturday – Thursday: 7:00 PM – 9:00 PM",
+    regNo: "A-48184"
   },
   {
     id: 3,
-    name: "Dr. Anita Sharma",
-    specialty: "Consultant Physician",
-    experience: "18 years",
-    image: "/placeholder.svg",
-    bio: "Focused on holistic care and lifestyle coaching.",
+    name: "Dr. Nadia Ireen (Chowdhury)",
+    specialty: "Medicine and Diabetes Specialist",
+    image: "Images/dr_nadia_ireen _chowdhury.jpg.jpeg",
+    bio: "MBBS (BSMMU), FCPS (Medicine), CMOSHMC.",
+    timing: "Sunday – Thursday: 6:00 PM – 9:00 PM",
+    regNo: "A-48613"
   },
+  {
+    id: 4,
+    name: "Dr. Yusuf Ahmed",
+    specialty: "Medicine and Diabetes Specialist",
+    image: "Images/dr_yusuf_ahmed.jpg.jpeg",
+    bio: "MBBS, FCPS (Medicine), CMOSHMC.",
+    timing: "Saturday – Thursday: 7:00 PM – 9:00 PM",
+    regNo: "A-50426"
+  },
+  {
+    id: 5,
+    name: "Dr. Fahmida Akhter",
+    specialty: "Obstetrics and Gynecology Specialist",
+    image: "Images/dr_fahmida_akhter.jpg.jpeg",
+    bio: "MBBS, FCPS. Evercare Hospital Chattogram.",
+    timing: "Friday: 3:00 PM – 5:00 PM",
+    regNo: "A-41649"
+  },
+  {
+    id: 6,
+    name: "Dr. Begum Tahmina Sultana",
+    specialty: "Obstetrics and Gynecology Specialist",
+    image: "Images/dr_begum_tahmina_sultana.jpg.jpeg",
+    bio: "MBBS, DGO, DMU. Chittagong Medical College.",
+    timing: "Saturday – Thursday: 4:00 PM – 8:00 PM",
+    regNo: "A-31268"
+  },
+  {
+    id: 7,
+    name: "Dr. Fazilatun Nessa (Rina)",
+    specialty: "Obstetrics and Gynecology Specialist",
+    image: "/placeholder.svg",
+    bio: "MBBS, MRCOG Training (KSA). Consultant at BGC Trust Hospital.",
+    timing: "Friday: 6:00 PM – 8:00 PM",
+    regNo: "A-46338"
+  },
+  {
+    id: 8,
+    name: "Dr. Nafiz Iqbal Siddiqui",
+    specialty: "Cardiologist",
+    image: "/placeholder.svg",
+    bio: "MBBS, D-CARD. Medicine & Heart Institute Chattogram.",
+    timing: "Friday: 6:00 PM – 9:00 PM",
+    regNo: "A-26941"
+  },
+  {
+    id: 9,
+    name: "Dr. Dhiman Das",
+    specialty: "Pediatrics Specialist",
+    image: "Images/dr_dhiman_das.jpg.jpeg",
+    bio: "MBBS, DCH. Chattogram Medical College Hospital.",
+    timing: "Friday: 10:00 AM – 1:00 PM",
+    regNo: "A-33738"
+  },
+  {
+    id: 10,
+    name: "Dr. Sifatullah Naeem Nuri",
+    specialty: "Pediatrics Specialist",
+    image: "Images/dr_sifatullah _naeem_nuri.jpg.jpeg",
+    bio: "MBBS, FCPS (Pediatrics). BMDC Reg No: A-63522.",
+    timing: "Sunday – Thursday: 6:00 PM – 9:00 PM",
+    regNo: "A-63522"
+  },
+  {
+    id: 11,
+    name: "Dr. Dibakar Barua",
+    specialty: "Diabetes Specialist",
+    image: "Images/dr_dibakar_barua.jpg.jpeg",
+    bio: "MBBS, CCD. CMOSHMC. Principal, Parkview Hospital.",
+    timing: "Friday: 9:00 AM – 12:00 PM",
+    regNo: "A-22567"
+  },
+  {
+    id: 12,
+    name: "Dr. Mamun Mustafa",
+    specialty: "Orthopedics Specialist",
+    image: "Images/dr_mamun_mustafa.jpg.jpeg",
+    bio: "MBBS, BCS (Health), D-Ortho.",
+    timing: "Saturday – Thursday: 5:00 PM – 7:00 PM",
+    regNo: "A-40681"
+  },
+  {
+    id: 13,
+    name: "Dr. Bilkis Akhter",
+    specialty: "Orthopedic Surgeon",
+    image: "/placeholder.svg",
+    bio: "MBBS, MS (Ortho Surgery). Chattogram Medical College.",
+    timing: "Friday: 3:00 PM – 6:00 PM",
+    regNo: "A-26493"
+  },
+  {
+    id: 14,
+    name: "Dr. Ekram Hossain Chowdhury",
+    specialty: "Chest Disease Specialist",
+    image: "Images/dr_ekram_hossain_chowdhury.jpg.jpeg",
+    bio: "DCD (Respiratory), DTC (Chest Disease).",
+    timing: "Saturday – Thursday: 6:00 PM – 9:00 PM",
+    regNo: "A-23780"
+  },
+  {
+    id: 15,
+    name: "Dr. Md. Aminul Islam (Tarek)",
+    specialty: "Chest Disease Specialist",
+    image: "/placeholder.svg",
+    bio: "MBBS, FCCP (USA). CMOSHMC.",
+    timing: "Friday: 5:00 PM – 7:00 PM",
+    regNo: "A-46895"
+  },
+  {
+    id: 16,
+    name: "Dr. Tanvir Alam",
+    specialty: "Dermatologist",
+    image: "Images/dr_tanvir_alam.jpg.jpeg",
+    bio: "MBBS, PGT (Dermatology), CCD. CMOSHMC.",
+    timing: "Saturday – Thursday: 7:00 PM – 9:00 PM",
+    regNo: "A-51402"
+  },
+  {
+    id: 17,
+    name: "Dr. Maleka Afroz",
+    specialty: "ENT Specialist",
+    image: "Images/dr-maleka_afroz.jpg.jpeg",
+    bio: "MBBS, FCPS (ENT). Chittagong International Medical College.",
+    timing: "Friday: 11:00 AM – 2:00 PM",
+    regNo: "A-33325"
+  },
+  {
+    id: 18,
+    name: "Dr. Tousif Bin Mamun",
+    specialty: "ENT Specialist",
+    image: "Images/dr_tousif_bin_mamun.jpg.jpeg",
+    bio: "MBBS, MS (ENT). Chattogram Medical College & Hospital.",
+    timing: "Saturday – Thursday: 6:00 PM – 9:00 PM",
+    regNo: "A-37625"
+  },
+  {
+    id: 19,
+    name: "Dr. Himadri Mohajan",
+    specialty: "Medicine and Diabetes Specialist",
+    image: "Images/dr_himadri_mohajan.jpg.jpeg",
+    bio: "MBBS, BCS (Health), Department of Medicine.",
+    timing: "Friday: 3:00 PM – 6:00 PM",
+    regNo: "A-48703"
+  },
+  {
+    id: 20,
+    name: "Dr. Kazi Zohaida Noor",
+    specialty: "Oral and Dental Specialist",
+    image: "/placeholder.svg",
+    bio: "BCS (Dental), Oral & Dental Surgery Specialist.",
+    timing: "Saturday – Thursday: 5:00 PM – 8:00 PM",
+    regNo: "A-63098"
+  }
 ];
 
-const specializations = [
-  ...new Set(doctors.map((doc) => doc.specialty)),
-];
+const specializations = [...new Set(doctors.map((doc) => doc.specialty))];
 
-const WHATSAPP_PHONE = "15551234567"; // Use the same WhatsApp number as in the widget
+const WHATSAPP_PHONE = "15551234567";
 
 const Doctor = () => {
   const [selectedSpecialty, setSelectedSpecialty] = useState<string>("all");
@@ -97,16 +251,20 @@ const Doctor = () => {
               <img
                 src={doc.image}
                 alt={doc.name}
+                onError={(e) => (e.currentTarget.src = "/placeholder.svg")}
                 className="w-24 h-24 rounded-full border mx-auto mb-4 object-cover"
               />
               <div className="font-bold text-xl mb-1">{doc.name}</div>
               <div className="text-blue-500 font-medium mb-1">
                 {doc.specialty}
               </div>
-              <div className="text-xs text-gray-500 mb-2">
-                {doc.experience} experience
-              </div>
-              <p className="text-gray-600 text-sm mb-4">{doc.bio}</p>
+              <p className="text-gray-600 text-sm mb-1">{doc.bio}</p>
+              <p className="text-gray-600 text-sm mb-1 font-medium">
+                Available: {doc.timing}
+              </p>
+              <p className="text-gray-500 text-xs mb-4">
+                BMDC Reg No: {doc.regNo}
+              </p>
               <button
                 onClick={() => handleBookAppointment(doc.name)}
                 className="inline-block px-4 py-1 bg-green-500 text-white rounded hover:bg-green-600 font-semibold text-sm transition-colors"

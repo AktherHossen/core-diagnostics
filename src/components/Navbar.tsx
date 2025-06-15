@@ -17,7 +17,13 @@ const Navbar = () => {
   return (
     <nav className="bg-white shadow-md">
       <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
-        <div className="font-bold text-xl text-blue-700">Health Hub Diagnostics</div>
+        <div className="flex items-center gap-2">
+  <div className="flex items-center gap-3">
+  <img src="/logo.jpg" alt="Core Diagnostics Logo" className="h-10 w-auto sm:h-15" />
+</div>
+
+</div>
+
         <div className="flex space-x-2 md:space-x-4">
           {navItems.map(item => {
             const Icon = item.icon;
