@@ -1,4 +1,3 @@
-
 import React, { createContext, useContext } from "react";
 
 const WHATSAPP_PHONE = "15551234567"; // Update with your WhatsApp number, digits only
@@ -48,4 +47,3 @@ const WhatsappWidgetButton = ({ openChat }: { openChat: (message?: string) => vo
   </button>
 );
 
-export default WhatsappWidget;
