@@ -8,6 +8,7 @@ import {
   SelectContent,
   SelectItem,
 } from "@/components/ui/select";
+import WhatsappWidget from "@/components/WhatsappWidget";
 
 const doctors = [
   {
@@ -40,8 +41,9 @@ const specializations = [
   ...new Set(doctors.map((doc) => doc.specialty)),
 ];
 
+const WHATSAPP_PHONE = "15551234567"; // Use the same WhatsApp number as in the widget
+
 const Doctor = () => {
-  // Default to "all" instead of ""
   const [selectedSpecialty, setSelectedSpecialty] = useState<string>("all");
 
   const filteredDoctors =
@@ -49,9 +51,13 @@ const Doctor = () => {
       ? doctors.filter((doc) => doc.specialty === selectedSpecialty)
       : doctors;
 
+  const getWhatsAppLink = (doctorName: string) =>
+    `https://wa.me/${WHATSAPP_PHONE}?text=Hi!%20I%20want%20to%20book%20an%20appointment%20with%20${encodeURIComponent(doctorName)}.`;
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       <Navbar />
+      <WhatsappWidget />
       <section className="py-12 px-4 max-w-5xl mx-auto">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-900 mb-3">
@@ -72,7 +78,6 @@ const Doctor = () => {
                 <SelectValue placeholder="All Specializations" />
               </SelectTrigger>
               <SelectContent>
-                {/* Use value="all" instead of value="" */}
                 <SelectItem value="all">All</SelectItem>
                 {specializations.map((spec) => (
                   <SelectItem key={spec} value={spec}>
@@ -102,9 +107,14 @@ const Doctor = () => {
                 {doc.experience} experience
               </div>
               <p className="text-gray-600 text-sm mb-4">{doc.bio}</p>
-              <button className="px-4 py-1 bg-blue-50 text-blue-600 rounded hover:bg-blue-100 font-semibold text-sm">
+              <a
+                href={getWhatsAppLink(doc.name)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-4 py-1 bg-green-500 text-white rounded hover:bg-green-600 font-semibold text-sm transition-colors"
+              >
                 Book Appointment
-              </button>
+              </a>
             </div>
           ))}
         </div>
