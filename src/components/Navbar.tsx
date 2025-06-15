@@ -15,20 +15,9 @@ const Navbar = () => {
   const location = useLocation();
 
   return (
-    <nav className="bg-white shadow-md border-b border-brand-gray">
+    <nav className="bg-white shadow-md">
       <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
-        <div className="font-bold text-xl flex gap-2 items-center text-brand-gray">
-          {/* Optionally: you can swap the placeholder.svg to your real logo here */}
-          <span
-            className="w-10 h-10 rounded-full bg-brand-default flex items-center justify-center"
-            style={{ background: "#18b497" }}
-          >
-            {/* Brand logo color circle */}
-            <span className="sr-only">Brand logo</span>
-          </span>
-          <span className="text-brand-default">core</span>
-          <span className="text-brand-blue font-light">DIAGNOSTIC LTD</span>
-        </div>
+        <div className="font-bold text-xl text-blue-700">Health Hub Diagnostics</div>
         <div className="flex space-x-2 md:space-x-4">
           {navItems.map(item => {
             const Icon = item.icon;
@@ -40,8 +29,8 @@ const Navbar = () => {
                 className={cn(
                   "flex items-center gap-2 px-3 py-2 rounded-lg transition-colors text-sm font-medium",
                   isActive
-                    ? "bg-brand-default/10 text-brand-default shadow"
-                    : "text-brand-gray hover:bg-brand-blue/10 hover:text-brand-blue"
+                    ? "bg-blue-100 text-blue-700 shadow"
+                    : "text-gray-600 hover:bg-blue-50 hover:text-blue-700"
                 )}
                 end
               >
