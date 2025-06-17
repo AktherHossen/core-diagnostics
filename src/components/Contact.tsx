@@ -43,18 +43,20 @@ const Contact = () => {
             Book your health package today and take the first step towards a healthier, happier you.
           </p>
         </div>
-        <div className="w-full h-64 md:h-80 rounded-lg overflow-hidden shadow-lg border border-white/20 mb-12">
-          <iframe
-            title="Google Map"
-            src="https://www.google.com/maps?q=A.S+Tower,+Arkan+Road,+Bahaddarhat,+Chattogram,+Bangladesh&output=embed"
-            width="100%"
-            height="100%"
-            style={{ border: 0 }}
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
+
+        {/* 🔁 Replaced iframe with a clickable image */}
+        <a
+          href="https://www.google.com/maps/place/Core+Diagnostic+Ltd./@22.371764,91.8369182,15z/data=!4m6!3m5!1s0x30ad270536ac093b:0x1b99f8326e067d73!8m2!3d22.3719971!4d91.8476471!16s%2Fg%2F11tx6v6pph?entry=ttu&g_ep=EgoyMDI1MDYxMS4wIKXMDSoASAFQAw%3D%3D"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="/Images/google-map.jpg"
+            alt="Core Diagnostic Center Map"
+            className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg border border-white/20 mb-12 hover:opacity-90 transition-opacity"
+          />
+        </a>
+
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <div className="space-y-8">
@@ -65,7 +67,7 @@ const Contact = () => {
                     <MapPin className="h-5 w-5 text-blue-200" />
                     <div>
                       <div className="font-semibold">Core Diagnostic Center LTD</div>
-                      <div className="text-blue-100">A.S Tower, Arkan Road (Opposite of RAB-7), Bahaddarhat,Chattogram</div>
+                      <div className="text-blue-100">A.S Tower, Arkan Road (Opposite of RAB-7), Bahaddarhat, Chattogram</div>
                     </div>
                   </div>
                   <div className="flex items-center gap-3">
@@ -156,6 +158,7 @@ const Contact = () => {
             </Card>
           </div>
         </div>
+
         <div className="text-center mt-16 text-sm text-white/70">
           Developed by <a href="https://synacto.de/en" className="underline hover:text-white">Synacto</a>
         </div>
