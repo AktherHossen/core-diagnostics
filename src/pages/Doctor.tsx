@@ -61,7 +61,7 @@ const doctors = [
     specialty: "Obstetrics and Gynecology Specialist",
     image: "Images/dr_begum_tahmina_sultana.jpg.jpeg",
     bio: "MBBS, DGO, DMU. Chittagong Medical College",
-    timing: "Saturday – Thursday: 4:00 PM – 8:00 PM",
+    timing: "Sat, Mon & Wed: 7:30 PM – 9:30 PM",
     regNo: "A-31268"
   },
   {
@@ -70,7 +70,7 @@ const doctors = [
     specialty: "Obstetrics and Gynecology Specialist",
     image: "/placeholder.svg",
     bio: "MBBS, MRCOG Training (KSA). Consultant, BGC Trust Hospital",
-    timing: "Friday: 6:00 PM – 8:00 PM",
+    timing: "Everyday: 3:00 PM - 5:00 PM(Closed on Friday)",
     regNo: "A-46338"
   },
   {
@@ -79,7 +79,7 @@ const doctors = [
     specialty: "Cardiologist",
     image: "/placeholder.svg",
     bio: "MBBS, D-CARD. Medicine & Heart Institute Chattogram",
-    timing: "Friday: 6:00 PM – 9:00 PM",
+    timing: "Sunday, Tuesday & Thursday 10:00 AM to 12:00 PM",
     regNo: "A-26941"
   },
   {
@@ -88,7 +88,7 @@ const doctors = [
     specialty: "Pediatrics Specialist",
     image: "Images/dr_dhiman_das.jpg.jpeg",
     bio: "MBBS, DCH. Chattogram Medical College Hospital",
-    timing: "Friday: 10:00 AM – 1:00 PM",
+    timing: "Every day from 4:00 PM to 7:00 PM (Closed on Fridays)",
     regNo: "A-33738"
   },
   {
@@ -106,7 +106,7 @@ const doctors = [
     specialty: "Diabetes Specialist",
     image: "Images/dr_dibakar_barua.jpg.jpeg",
     bio: "MBBS, CCD. CMOSHMC. Principal, Parkview Hospital",
-    timing: "Friday: 9:00 AM – 12:00 PM",
+    timing: "Everyday: 9:00 AM – 12:00 PM (closed on Friday)",
     regNo: "A-22567"
   },
   {
@@ -115,7 +115,7 @@ const doctors = [
     specialty: "Orthopedics Specialist",
     image: "Images/dr_mamun_mustafa.jpg.jpeg",
     bio: "MBBS, BCS (Health), D-Ortho. CMOSHMC",
-    timing: "Saturday – Thursday: 5:00 PM – 7:00 PM",
+    timing: "Saturday, Sunday & Wednesday: 5:00 PM – 7:00 PM",
     regNo: "A-40681"
   },
   {
@@ -124,7 +124,7 @@ const doctors = [
     specialty: "Orthopedic Surgeon",
     image: "/placeholder.svg",
     bio: "MBBS, MS (Ortho Surgery). Chattogram Medical College",
-    timing: "Friday: 3:00 PM – 6:00 PM",
+    timing: "Sat, Mon & Wed: 7:30 PM – 9:00 PM + Sun, Tues,Thu and Fri:4:00 PM - 7:00 PM",
     regNo: "A-26493"
   },
   {
@@ -133,7 +133,7 @@ const doctors = [
     specialty: "Chest Disease Specialist",
     image: "Images/dr_ekram_hossain_chowdhury.jpeg",
     bio: "MBBS, DCD (Respiratory), DTC (Chest Disease). CMCH",
-    timing: "Saturday – Thursday: 6:00 PM – 9:00 PM",
+    timing: "Sat,Sun,Wed & Thu: 5:30 PM – 8:30 PM",
     regNo: "A-23780"
   },
   {
@@ -142,7 +142,7 @@ const doctors = [
     specialty: "Chest Disease Specialist",
     image: "Images/dr_md_aminul_islam_tarek.jpeg",
     bio: "MBBS, FCCP (USA). CMOSHMC",
-    timing: "Friday: 5:00 PM – 7:00 PM",
+    timing: "Every day from 8:00 PM to 9:00 PM",
     regNo: "A-46895"
   },
   {
@@ -151,7 +151,7 @@ const doctors = [
     specialty: "Dermatologist",
     image: "Images/dr_tanvir_alam.jpg.jpeg",
     bio: "MBBS, PGT (Dermatology), CCD. CMOSHMC",
-    timing: "Saturday – Thursday: 7:00 PM – 9:00 PM",
+    timing: "Every Day From 7:00 PM to 10:00 PM",
     regNo: "A-51402"
   },
   {
@@ -160,7 +160,7 @@ const doctors = [
     specialty: "ENT Specialist",
     image: "Images/dr-maleka_afroz.jpg.jpeg",
     bio: "MBBS, FCPS (ENT). Chittagong International Medical College",
-    timing: "Friday: 11:00 AM – 2:00 PM",
+    timing: "Sunday, Tuesday & Thursday From 5:00 PM to 7:00 PM",
     regNo: "A-33325"
   },
   {
@@ -169,7 +169,7 @@ const doctors = [
     specialty: "ENT Specialist",
     image: "Images/dr_tousif_bin_mamun.jpg.jpeg",
     bio: "MBBS, MS (ENT). Chattogram Medical College & Hospital",
-    timing: "Saturday – Thursday: 6:00 PM – 9:00 PM",
+    timing: "Saturday, Monday & Wednesday From 7.30 PM to 9:00 PM",
     regNo: "A-37625"
   },
   {
@@ -187,7 +187,7 @@ const doctors = [
     specialty: "Oral and Dental Specialist",
     image: "/placeholder.svg",
     bio: "BCS (Dental), Oral & Dental Surgery Specialist",
-    timing: "Saturday – Thursday: 5:00 PM – 8:00 PM",
+    timing: "Every day from 4:00 PM to 10:00 PM",
     regNo: "A-63098"
   }
 ];
