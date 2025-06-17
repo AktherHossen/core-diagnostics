@@ -10,6 +10,7 @@ import Blog from "./pages/Blog";
 import Doctor from "./pages/Doctor";
 import ContactPage from "./pages/ContactPage";
 import Gallery from "./pages/Gallery";
+import AboutUs from "./pages/AboutUs";
 import { WhatsappProvider } from "@/components/WhatsappWidget";
 
 const queryClient = new QueryClient();
@@ -23,6 +24,7 @@ const App = () => (
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Index />} />
+            <Route path="/about" element={<AboutUs />} />
             <Route path="/health-package" element={<HealthPackage />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/doctor" element={<Doctor />} />
