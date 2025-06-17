@@ -1,6 +1,14 @@
 import { NavLink, useLocation } from "react-router-dom";
 import { cn } from "@/lib/utils";
-import { Heart, Contact, Home, User, Newspaper, Image as GalleryIcon, Info } from "lucide-react";
+import {
+  Heart,
+  Contact,
+  Home,
+  User,
+  Newspaper,
+  Image as GalleryIcon,
+  Info,
+} from "lucide-react";
 
 const navItems = [
   { name: "Home", path: "/", icon: Home },
@@ -18,14 +26,25 @@ const Navbar = () => {
   return (
     <nav className="bg-white shadow-md">
       <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+        {/* Responsive Logo */}
         <div className="flex items-center gap-2">
-          <div className="flex items-center gap-3">
-            <img src="/logo.jpg" alt="Core Diagnostics Logo" className="h-10 w-auto sm:h-15" />
-          </div>
+          {/* Mobile Logo Icon Only */}
+          <img
+            src="/logo-icon.jpg" // Replace with your actual mobile logo image
+            alt="Core Diagnostics Icon"
+            className="h-8 w-auto block sm:hidden"
+          />
+          {/* Full Logo for Tablet/Desktop */}
+          <img
+            src="/logo.jpg"
+            alt="Core Diagnostics Logo"
+            className="h-10 w-auto hidden sm:block"
+          />
         </div>
 
+        {/* Nav Links */}
         <div className="flex space-x-2 md:space-x-4">
-          {navItems.map(item => {
+          {navItems.map((item) => {
             const Icon = item.icon;
             const isActive = location.pathname === item.path;
             return (
