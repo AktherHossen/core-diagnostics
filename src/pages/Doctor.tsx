@@ -93,9 +93,9 @@ const doctors = [
   },
   {
     id: 10,
-    name: "Dr. Sifatullah Naeem Nuri",
+    name: "Dr. Sifatullah Naeem Noori",
     specialty: "Pediatrics Specialist",
-    image: "Images/dr_sifatullah _naeem_nuri.jpg.jpeg",
+    image: "Images/dr_sifatullah_naeem_noori.jpeg",
     bio: "MBBS, FCPS (Pediatrics). BMDC Reg No: A-63522.",
     timing: "Sunday – Thursday: 6:00 PM – 9:00 PM",
     regNo: "A-63522"
@@ -131,7 +131,7 @@ const doctors = [
     id: 14,
     name: "Dr. Ekram Hossain Chowdhury",
     specialty: "Chest Disease Specialist",
-    image: "Images/dr_ekram_hossain_chowdhury.jpg.jpeg",
+    image: "Images/dr_ekram_hossain_chowdhury.jpeg",
     bio: "DCD (Respiratory), DTC (Chest Disease).",
     timing: "Saturday – Thursday: 6:00 PM – 9:00 PM",
     regNo: "A-23780"
@@ -140,7 +140,7 @@ const doctors = [
     id: 15,
     name: "Dr. Md. Aminul Islam (Tarek)",
     specialty: "Chest Disease Specialist",
-    image: "/placeholder.svg",
+    image: "Images/dr_md_aminul_islam_tarek.jpeg",
     bio: "MBBS, FCCP (USA). CMOSHMC.",
     timing: "Friday: 5:00 PM – 7:00 PM",
     regNo: "A-46895"
@@ -175,7 +175,7 @@ const doctors = [
   {
     id: 19,
     name: "Dr. Himadri Mohajan",
-    specialty: "Medicine and Diabetes Specialist",
+    specialty: "Psychiatrist",
     image: "Images/dr_himadri_mohajan.jpg.jpeg",
     bio: "MBBS, BCS (Health), Department of Medicine.",
     timing: "Friday: 3:00 PM – 6:00 PM",
