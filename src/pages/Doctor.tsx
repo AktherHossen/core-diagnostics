@@ -177,8 +177,8 @@ const doctors = [
     name: "Dr. Himadri Mohajan",
     specialty: "Psychiatrist",
     image: "Images/dr_himadri_mohajan.jpg.jpeg",
-    bio: "MBBS, BCS (Health), Department of Medicine.",
-    timing: "Friday: 3:00 PM – 6:00 PM",
+    bio: "MBBS, BCS (Health), Department of Psychiatry.",
+    timing: "Sun,Tue & Thu: 4:00 PM – 7:00 PM",
     regNo: "A-48703"
   },
   {
