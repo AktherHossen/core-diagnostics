@@ -77,7 +77,7 @@ const doctors = [
     id: 8,
     name: "Dr. Nafiz Iqbal Siddiqui",
     specialty: "Cardiologist",
-    image: "/placeholder.svg",
+    image: "Images/dr_nafiz_iqbal_siddiqui.jpeg",
     bio: "MBBS, D-CARD. Medicine & Heart Institute Chattogram",
     timing: "Sunday, Tuesday & Thursday 10:00 AM to 12:00 PM",
     regNo: "A-26941"
