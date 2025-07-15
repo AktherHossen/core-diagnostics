@@ -73,14 +73,14 @@ const Contact = () => {
                   <div className="flex items-center gap-3">
                     <Phone className="h-5 w-5 text-blue-200" />
                     <div>
-                      <div className="font-semibold">+8801958091201</div>
+                      <div className="font-semibold">+8801958092201</div>
                       <div className="text-blue-100">Emergency Number</div>
                     </div>
                   </div>
                   <div className="flex items-center gap-3">
                     <Mail className="h-5 w-5 text-blue-200" />
                     <div>
-                      <div className="font-semibold">mamun@corediagnosticltd.com</div>
+                      <div className="font-semibold">contact@corediagnosticltd.com</div>
                       <div className="text-blue-100">Get instant support</div>
                     </div>
                   </div>
@@ -138,14 +138,14 @@ const Contact = () => {
                   <div className="bg-white/10 rounded-lg p-4">
                     <div className="flex justify-between items-center mb-2">
                       <span className="font-semibold">Family Package</span>
-                      <span className="bg-blue-500 text-white px-2 py-1 rounded text-sm">25% OFF</span>
+                      <span className="bg-blue-500 text-white px-2 py-1 rounded text-sm">30% OFF</span>
                     </div>
                     <p className="text-blue-100 text-sm">Special rates for 3+ family members</p>
                   </div>
                   <div className="bg-white/10 rounded-lg p-4">
                     <div className="flex justify-between items-center mb-2">
                       <span className="font-semibold">Corporate Wellness</span>
-                      <span className="bg-purple-500 text-white px-2 py-1 rounded text-sm">30% OFF</span>
+                      <span className="bg-purple-500 text-white px-2 py-1 rounded text-sm">35% OFF</span>
                     </div>
                     <p className="text-blue-100 text-sm">Bulk bookings for companies</p>
                   </div>

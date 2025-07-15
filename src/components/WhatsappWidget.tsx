@@ -1,6 +1,6 @@
 import React, { createContext, useContext } from "react";
 
-const WHATSAPP_PHONE = "8801958091202"; // Update with your WhatsApp number, digits only
+const WHATSAPP_PHONE = "8801958092202"; // Update with your WhatsApp number, digits only
 
 // Context to provide openChat action everywhere
 type WhatsappContextValue = {

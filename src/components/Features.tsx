@@ -3,11 +3,6 @@ import { Shield, Clock, Award, Heart } from "lucide-react";
 
 const features = [
   {
-    icon: Shield,
-    title: "NABL Certified Lab",
-    description: "Our laboratory is accredited by NABL ensuring highest quality standards and accurate results you can trust."
-  },
-  {
     icon: Clock,
     title: "Quick Turnaround",
     description: "Get your comprehensive health reports within 24 hours with our efficient processing and digital delivery system."
@@ -38,34 +33,35 @@ const Features = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {features.map((feature, index) => {
-            const IconComponent = feature.icon;
-            return (
-              <div key={index} className="text-center group">
-                <div className="mx-auto mb-4 p-4 bg-blue-100 rounded-full w-fit group-hover:bg-blue-200 transition-colors duration-300">
-                  <IconComponent className="h-8 w-8 text-blue-600" />
+        <div className="flex justify-center">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
+            {features.map((feature, index) => {
+              const IconComponent = feature.icon;
+              return (
+                <div key={index} className="text-center group flex flex-col items-center">
+                  <div className="mx-auto mb-4 p-4 bg-blue-100 rounded-full w-fit group-hover:bg-blue-200 transition-colors duration-300">
+                    <IconComponent className="h-8 w-8 text-blue-600" />
+                  </div>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                    {feature.title}
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    {feature.description}
+                  </p>
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                  {feature.title}
-                </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  {feature.description}
-                </p>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
         </div>
-        
         {/* Stats Section */}
-        <div className="mt-16 bg-white rounded-2xl p-8 shadow-lg">
+        <div className="mt-16 bg-white rounded-2xl p-8 shadow-lg flex justify-center">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-4xl font-bold text-blue-600 mb-2">50,000+</div>
+              <div className="text-4xl font-bold text-blue-600 mb-2">5,000+</div>
               <div className="text-gray-600">Happy Patients</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-blue-600 mb-2">15+</div>
+              <div className="text-4xl font-bold text-blue-600 mb-2">3+</div>
               <div className="text-gray-600">Years Experience</div>
             </div>
             <div>
