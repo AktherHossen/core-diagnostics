@@ -75,6 +75,21 @@ const Gallery = () => {
       imageUrl: "/Gallery/lab3.jpeg",
       caption: "Inside Our Laboratory"
     },
+    {
+      id: 14,
+      imageUrl: "/Gallery/lab4.jpeg",
+      caption: "Inside Our Laboratory"
+    },
+    {
+      id: 15,
+      imageUrl: "/Gallery/lab5.jpeg",
+      caption: "Inside Our Laboratory"
+    },
+    {
+      id: 16,
+      imageUrl: "/Gallery/lab6.jpeg",
+      caption: "Inside Our Laboratory"
+    },
   ]);
 
   const [loadedImages, setLoadedImages] = useState<{ [key: number]: boolean }>({});

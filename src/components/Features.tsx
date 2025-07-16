@@ -55,14 +55,10 @@ const Features = () => {
         </div>
         {/* Stats Section */}
         <div className="mt-16 bg-white rounded-2xl p-8 shadow-lg flex justify-center">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-8 text-center">
             <div>
               <div className="text-4xl font-bold text-blue-600 mb-2">5,000+</div>
               <div className="text-gray-600">Happy Patients</div>
-            </div>
-            <div>
-              <div className="text-4xl font-bold text-blue-600 mb-2">3+</div>
-              <div className="text-gray-600">Years Experience</div>
             </div>
             <div>
               <div className="text-4xl font-bold text-blue-600 mb-2">99.9%</div>
