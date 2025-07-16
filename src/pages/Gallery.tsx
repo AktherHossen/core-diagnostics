@@ -39,7 +39,42 @@ const Gallery = () => {
       id: 6,
       imageUrl: "/Gallery/event6.jpeg",
       caption: "Haz Package"
-    }
+    },
+    {
+      id: 7,
+      imageUrl: "/Gallery/employee.jpeg",
+      caption: "Support Staff"
+    },
+    {
+      id: 8,
+      imageUrl: "/Gallery/waiting_area.jpeg",
+      caption: "Waiting Area"
+    },
+    {
+      id: 9,
+      imageUrl: "/Gallery/lab_assistant.jpeg",
+      caption: "Lab Assistants in Action"
+    },
+    {
+      id: 10,
+      imageUrl: "/Gallery/reception.jpeg",
+      caption: "Reception Area"
+    },
+    {
+      id: 11,
+      imageUrl: "/Gallery/lab1.jpeg",
+      caption: "Inside Our Laboratory"
+    },
+    {
+      id: 12,
+      imageUrl: "/Gallery/lab2.jpeg",
+      caption: "Lab Assistants in Action"
+    },
+    {
+      id: 13,
+      imageUrl: "/Gallery/lab3.jpeg",
+      caption: "Inside Our Laboratory"
+    },
   ]);
 
   const [loadedImages, setLoadedImages] = useState<{ [key: number]: boolean }>({});

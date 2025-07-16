@@ -64,14 +64,14 @@ const AboutUs = () => {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
                 <img 
-                  src="/Images/director.jpg" 
+                  src="/Images/director.jpeg" 
                   alt="Director" 
                   className="rounded-lg shadow-md w-full h-auto"
                   onError={(e) => (e.currentTarget.src = "/placeholder.svg")}
                 />
               </div>
               <div className="space-y-6">
-                <h3 className="text-2xl font-semibold text-gray-900">Dr. Borhan Azad</h3>
+                <h3 className="text-2xl font-semibold text-gray-900">Dr. Mohammad Moinul Hossain</h3>
                 <p className="text-gray-600 text-lg leading-relaxed">
                   "Welcome to Core Diagnostics. Our journey began with a simple yet powerful vision: to make 
                   quality healthcare accessible to everyone. Over the years, we have grown to become one of 
