@@ -189,7 +189,43 @@ const doctors = [
     bio: "BDS (CIDC) PGT or Conservative Dentistry Oral & Dental Surgeon Chittagong Medical College Specialized in Root Canal Treatment Specialized in Smile Design",
     timing: "Every day from 4:00 PM to 10:00 PM",
     regNo: "A-99734"
-  }
+  },
+  {
+    id: 21,
+    name: "Dr. Chowdhury Tanvir Ivne Kashem",
+    specialty: " Medicine, Diabetes & Hormone Specialist",
+    image: "Images/dr_chowdury_tanvern_ibne_hashem.jpeg",
+    bio: "MBBS , BCS (Health) FCPS (Part -2), Medicine PGT in Medicine Medicine, Diabetes & Hormone  specialist",
+    timing: "Saturday, Monday & Wednesday (7 pm - 10 pm)",
+    regNo: ""
+  },
+  {
+    id: 22,
+    name: "Dr. Maliha Subat",
+    specialty: "Surgery specialist",
+    image: "Images/dr_maliha_subat.jpeg",
+    bio: "MBBS, MRCS (England) , Registrar, Department of SurgeryInstitute of Applied Health Sciences (IAHS)",
+    timing: "Saturday, Monday & Wednesday (7 pm - 10 pm)",
+    regNo: "A-112631"
+  },
+  {
+    id: 23,
+    name: "Dr. Tazmira Islam Tanni",
+    specialty: "Pediatric & Child Health",
+    image: "Images/dr_tazmira_islam_tanni.jpeg",
+    bio: "MBBS, DCH (BSMMU)Newborne, pediatric & Child specialist Consultant - Pediatrics Department CIMCH, BMD",
+    timing: "Saturday,Monday and Webnesday from 10:00 AM to 12:30 PM",
+    regNo: "A-64180"
+  },
+  {
+    id: 24,
+    name: "Dr. Nishrat Jahan Nishu",
+    specialty: " Skin & VD specialist",
+    image: "Images/dr_nishrat_jahan_nishu.jpeg",
+    bio: "MBBS (CU), PGT (Medicine, Skin & VD)Medical OfficerScin & VD DepartmentChattogram International Medical College & HospitalBMDC",
+    timing: "Every day from 4:00 PM to 7:00 PM (Closed on Friday)",
+    regNo: "A-109663"
+  },
 ];
 
 const specializations = [...new Set(doctors.map((doc) => doc.specialty))];
