@@ -48,150 +48,6 @@ const doctors = [
   },
   {
     id: 5,
-    name: "Dr. Fahmida Akhter",
-    specialty: "Obstetrics and Gynecology Specialist",
-    image: "Images/dr_fahmida_akhter.jpg.jpeg",
-    bio: "MBBS, FCPS Attending Consultant, Gynecology and Obstetrics Evercare Hospital Chittagong",
-    timing: "Monday: 4:00 PM – 7:00 PM",
-    regNo: ""
-  },
-  {
-    id: 6,
-    name: "Dr. Begum Tahmina Sultana",
-    specialty: "Obstetrics and Gynecology Specialist",
-    image: "Images/dr_begum_tahmina_sultana.jpg.jpeg",
-    bio: "MBBS (SMOC), DMU FCPS (Gynae & Obs), Assistant Professor (Gynecology and Obstetrics), Chittagong International Medical College (CIMC)",
-    timing: "Sat, Mon & Wed: 7:30 PM – 9:30 PM",
-    regNo: "A-46592"
-  },
-  {
-    id: 7,
-    name: "Dr. Fazilatun Nessa (Rina)",
-    specialty: "Obstetrics and Gynecology Specialist",
-    image: "/placeholder.svg",
-    bio: "MBBS, MRCOG Training (KSA) Licensed Obstetrician and Gynecologist (KSA) BGC Trust Medical College & Hospital",
-    timing: "Everyday: 3:00 PM - 5:00 PM(Closed on Friday)",
-    regNo: ""
-  },
-  {
-    id: 8,
-    name: "Dr. Nafiz Iqbal Siddiqui",
-    specialty: "Cardiologist",
-    image: "Images/dr_nafiz_iqbal_siddiqui.jpeg",
-    bio: "MBBS (CMC) D-Card (BSMU), MRCP (Part-2) Post Graduate Training in Medicine & Neuro Medicine. Former Consultant, Fortis Heart Institute",
-    timing: "Sunday, Tuesday & Thursday 10:00 AM to 12:00 PM",
-    regNo: ""
-  },
-  {
-    id: 9,
-    name: "Dr. Dhiman Das",
-    specialty: "Pediatrics Specialist",
-    image: "Images/dr_dhiman_das.jpg.jpeg",
-    bio: "MBBS, BCS (Health) DCH (BSMMU) ENS, PGPN (Child Nutrition) Chittagong Medical College Hospital",
-    timing: "Every day from 4:00 PM to 7:00 PM (Closed on Fridays)",
-    regNo: ""
-  },
-  {
-    id: 10,
-    name: "Dr. Sifatullah Naeem Nuri",
-    specialty: "Pediatrics Specialist",
-    image: "Images/dr_sifatullah_naeem_noori.jpeg",
-    bio: "MBBS (CMC), FCPS (Medicine-FP) PGT (Child Health), ICPPN (Child Nutrition) MACP (USA) Chittagong Medical College Hospital",
-    timing: "Sunday – Thursday: 6:00 PM – 9:00 PM",
-    regNo: "A-94227"
-  },
-  {
-    id: 11,
-    name: "Dr. Dibakar Barua",
-    specialty: "Diabetes Specialist",
-    image: "Images/dr_dibakar_barua.jpg.jpeg",
-    bio: "MBBS (CU), DMU (DU) EDC (Diabetology,BIRDEM) MRCP (C) – Medicine Diabetologist and Family Physician CMO, Patiya Diabetic Hospital",
-    timing: "Everyday: 9:00 AM – 12:00 PM (closed on Friday)",
-    regNo: "A-27777"
-  },
-  {
-    id: 12,
-    name: "Dr. Mamun Mustafa",
-    specialty: "Orthopedics Specialist",
-    image: "Images/dr_mamun_mustafa.jpg.jpeg",
-    bio: "MBBS, BCS (Health) MS (Orthopedics) Chittagong Medical College Hospital",
-    timing: "Saturday, Sunday & Wednesday: 3:00 PM – 4:30 PM",
-    regNo: "A-45852"
-  },
-  {
-    id: 13,
-    name: "Dr. Bilkis Akhter",
-    specialty: "Orthopedic Surgeon",
-    image: "/placeholder.svg",
-    bio: "MBBS, MS (Orthopedic Surgery) Orthopedics, Trauma (Accident and Microvascular Surgeon)",
-    timing: "Sat, Mon & Wed: 7:30 PM – 9:00 PM + Sun, Tues,Thu and Fri:4:00 PM - 7:00 PM",
-    regNo: "A-45497"
-  },
-  {
-    id: 14,
-    name: "Dr. Ekram Hossain Chowdhury",
-    specialty: "Chest Disease Specialist",
-    image: "Images/dr_ekram_hossain_chowdhury.jpeg",
-    bio: "MBBS, BCS (Health) CCD (BIRDEM), DTCCD (Chest Diseases) National Institute of Chest Diseases & Hospital, Dhaka",
-    timing: "Sat,Sun,Wed & Thu: 5:30 PM – 8:30 PM",
-    regNo: "A-54902"
-  },
-  {
-    id: 15,
-    name: "Dr. Md. Aminul Islam (Tarek)",
-    specialty: "Dermatologist",
-    image: "Images/dr_md_aminul_islam_tarek.jpeg",
-    bio: "MBBS (CMC), BCS (Health) FCPS Medicine(F.P) DDV (BSMMU) Chittagong Medical College Hospital",
-    timing: "Every day from 8:00 PM to 9:00 PM",
-    regNo: ""
-  },
-  {
-    id: 16,
-    name: "Dr. Tanvir Alam",
-    specialty: "Dermatologist",
-    image: "Images/dr_tanvir_alam.jpg.jpeg",
-    bio: "MBBS, PGT (Medicine) PGT (Skin & VD),CCD (Diabetology) Chittagong Medical College & Hospital",
-    timing: "Every Day From 7:00 PM to 10:00 PM",
-    regNo: "99734"
-  },
-  {
-    id: 17,
-    name: "Dr. Maleka Afroz",
-    specialty: "ENT Specialist",
-    image: "Images/dr-maleka_afroz.jpg.jpeg",
-    bio: "MBBS, FCPS (ENT) Head of Department (ENT) Chittagong International Medical College",
-    timing: "Sunday, Tuesday & Thursday From 5:00 PM to 7:00 PM",
-    regNo: "A-26830"
-  },
-  {
-    id: 18,
-    name: "Dr. Tousif Bin Mamun",
-    specialty: "ENT Specialist",
-    image: "Images/dr_tousif_bin_mamun.jpg.jpeg",
-    bio: "MBBS, MCPS (ENT) Assistant Registrar (ENT) Chittagong Medical College & Hospital",
-    timing: "Saturday, Monday & Wednesday From 7.30 PM to 9:00 PM",
-    regNo: "A-75986"
-  },
-  {
-    id: 19,
-    name: "Dr. Himadri Mohajan",
-    specialty: "Psychiatrist",
-    image: "Images/dr_himadri_mohajan.jpg.jpeg",
-    bio: "MBBS, BCS (Health) MD (Psychiatry) Assistant Professor, Department of Psychiatry Chittagong Medical College & Hospital",
-    timing: "Sun, Tue & Thu: 4:00 PM – 7:00 PM",
-    regNo: ""
-  },
-  {
-    id: 20,
-    name: "Dr. Kazi Zohaida Noor",
-    specialty: "Oral and Dental Specialist",
-    image: "/placeholder.svg",
-    bio: "BDS (CIDC) PGT or Conservative Dentistry Oral & Dental Surgeon Chittagong Medical College Specialized in Root Canal Treatment Specialized in Smile Design",
-    timing: "Every day from 4:00 PM to 10:00 PM",
-    regNo: "A-99734"
-  },
-  {
-    id: 21,
     name: "Dr. Chowdhury Tanvir Ivne Kashem",
     specialty: " Medicine, Diabetes & Hormone Specialist",
     image: "Images/dr_chowdury_tanvern_ibne_hashem.jpeg",
@@ -200,16 +56,61 @@ const doctors = [
     regNo: ""
   },
   {
-    id: 22,
-    name: "Dr. Maliha Subat",
-    specialty: "Surgery specialist",
-    image: "Images/dr_maliha_subat.jpeg",
-    bio: "MBBS, MRCS (England) , Registrar, Department of SurgeryInstitute of Applied Health Sciences (IAHS)",
-    timing: "Saturday, Monday & Wednesday (7 pm - 10 pm)",
-    regNo: "A-112631"
+    id: 6,
+    name: "Dr. Fahmida Akhter",
+    specialty: "Obstetrics and Gynecology Specialist",
+    image: "Images/dr_fahmida_akhter.jpg.jpeg",
+    bio: "MBBS, FCPS Attending Consultant, Gynecology and Obstetrics Evercare Hospital Chittagong",
+    timing: "Monday: 4:00 PM – 7:00 PM",
+    regNo: ""
   },
   {
-    id: 23,
+    id: 7,
+    name: "Dr. Begum Tahmina Sultana",
+    specialty: "Obstetrics and Gynecology Specialist",
+    image: "Images/dr_begum_tahmina_sultana.jpg.jpeg",
+    bio: "MBBS (SMOC), DMU FCPS (Gynae & Obs), Assistant Professor (Gynecology and Obstetrics), Chittagong International Medical College (CIMC)",
+    timing: "Sat, Mon & Wed: 7:30 PM – 9:30 PM",
+    regNo: "A-46592"
+  },
+  {
+    id: 8,
+    name: "Dr. Fazilatun Nessa (Rina)",
+    specialty: "Obstetrics and Gynecology Specialist",
+    image: "/placeholder.svg",
+    bio: "MBBS, MRCOG Training (KSA) Licensed Obstetrician and Gynecologist (KSA) BGC Trust Medical College & Hospital",
+    timing: "Everyday: 3:00 PM - 5:00 PM(Closed on Friday)",
+    regNo: ""
+  },
+  {
+    id: 9,
+    name: "Dr. Nafiz Iqbal Siddiqui",
+    specialty: "Cardiologist",
+    image: "Images/dr_nafiz_iqbal_siddiqui.jpeg",
+    bio: "MBBS (CMC) D-Card (BSMU), MRCP (Part-2) Post Graduate Training in Medicine & Neuro Medicine. Former Consultant, Fortis Heart Institute",
+    timing: "Sunday, Tuesday & Thursday 10:00 AM to 12:00 PM",
+    regNo: ""
+  },
+  {
+    id: 10,
+    name: "Dr. Dhiman Das",
+    specialty: "Pediatrics Specialist",
+    image: "Images/dr_dhiman_das.jpg.jpeg",
+    bio: "MBBS, BCS (Health) DCH (BSMMU) ENS, PGPN (Child Nutrition) Chittagong Medical College Hospital",
+    timing: "Every day from 4:00 PM to 7:00 PM (Closed on Fridays)",
+    regNo: ""
+  },
+  {
+    id: 11,
+    name: "Dr. Sifatullah Naeem Nuri",
+    specialty: "Pediatrics Specialist",
+    image: "Images/dr_sifatullah_naeem_noori.jpeg",
+    bio: "MBBS (CMC), FCPS (Medicine-FP) PGT (Child Health), ICPPN (Child Nutrition) MACP (USA) Chittagong Medical College Hospital",
+    timing: "Sunday – Thursday: 6:00 PM – 9:00 PM",
+    regNo: "A-94227"
+  },
+  {
+    id: 12,
     name: "Dr. Tazmira Islam Tanni",
     specialty: "Pediatric & Child Health",
     image: "Images/dr_tazmira_islam_tanni.jpeg",
@@ -218,13 +119,112 @@ const doctors = [
     regNo: "A-64180"
   },
   {
-    id: 24,
+    id: 13,
+    name: "Dr. Dibakar Barua",
+    specialty: "Diabetes Specialist",
+    image: "Images/dr_dibakar_barua.jpg.jpeg",
+    bio: "MBBS (CU), DMU (DU) EDC (Diabetology,BIRDEM) MRCP (C) – Medicine Diabetologist and Family Physician CMO, Patiya Diabetic Hospital",
+    timing: "Everyday: 9:00 AM – 12:00 PM (closed on Friday)",
+    regNo: "A-27777"
+  },
+  {
+    id: 14,
+    name: "Dr. Mamun Mustafa",
+    specialty: "Orthopedics Specialist",
+    image: "Images/dr_mamun_mustafa.jpg.jpeg",
+    bio: "MBBS, BCS (Health) MS (Orthopedics) Chittagong Medical College Hospital",
+    timing: "Saturday, Sunday & Wednesday: 3:00 PM – 4:30 PM",
+    regNo: "A-45852"
+  },
+  {
+    id: 15,
+    name: "Dr. Bilkis Akhter",
+    specialty: "Orthopedic Surgeon",
+    image: "/placeholder.svg",
+    bio: "MBBS, MS (Orthopedic Surgery) Orthopedics, Trauma (Accident and Microvascular Surgeon)",
+    timing: "Sat, Mon & Wed: 7:30 PM – 9:00 PM + Sun, Tues,Thu and Fri:4:00 PM - 7:00 PM",
+    regNo: "A-45497"
+  },
+  {
+    id: 16,
+    name: "Dr. Ekram Hossain Chowdhury",
+    specialty: "Chest Disease Specialist",
+    image: "Images/dr_ekram_hossain_chowdhury.jpeg",
+    bio: "MBBS, BCS (Health) CCD (BIRDEM), DTCCD (Chest Diseases) National Institute of Chest Diseases & Hospital, Dhaka",
+    timing: "Sat,Sun,Wed & Thu: 5:30 PM – 8:30 PM",
+    regNo: "A-54902"
+  },
+  {
+    id: 17,
+    name: "Dr. Md. Aminul Islam (Tarek)",
+    specialty: "Dermatologist",
+    image: "Images/dr_md_aminul_islam_tarek.jpeg",
+    bio: "MBBS (CMC), BCS (Health) FCPS Medicine(F.P) DDV (BSMMU) Chittagong Medical College Hospital",
+    timing: "Every day from 8:00 PM to 9:00 PM",
+    regNo: ""
+  },
+  {
+    id: 18,
+    name: "Dr. Tanvir Alam",
+    specialty: "Dermatologist",
+    image: "Images/dr_tanvir_alam.jpg.jpeg",
+    bio: "MBBS, PGT (Medicine) PGT (Skin & VD),CCD (Diabetology) Chittagong Medical College & Hospital",
+    timing: "Every Day From 7:00 PM to 10:00 PM",
+    regNo: "99734"
+  },
+  {
+    id: 19,
     name: "Dr. Nishrat Jahan Nishu",
     specialty: " Skin & VD specialist",
     image: "Images/dr_nishrat_jahan_nishu.jpeg",
     bio: "MBBS (CU), PGT (Medicine, Skin & VD)Medical OfficerScin & VD DepartmentChattogram International Medical College & HospitalBMDC",
     timing: "Every day from 4:00 PM to 7:00 PM (Closed on Friday)",
     regNo: "A-109663"
+  },
+  {
+    id: 20,
+    name: "Dr. Maliha Subat",
+    specialty: "Surgery specialist",
+    image: "Images/dr_maliha_subat.jpeg",
+    bio: "MBBS, MRCS (England) , Registrar, Department of SurgeryInstitute of Applied Health Sciences (IAHS)",
+    timing: "Saturday, Monday & Wednesday (7 pm - 10 pm)",
+    regNo: "A-112631"
+  },
+  {
+    id: 21,
+    name: "Dr. Maleka Afroz",
+    specialty: "ENT Specialist",
+    image: "Images/dr-maleka_afroz.jpg.jpeg",
+    bio: "MBBS, FCPS (ENT) Head of Department (ENT) Chittagong International Medical College",
+    timing: "Sunday, Tuesday & Thursday From 5:00 PM to 7:00 PM",
+    regNo: "A-26830"
+  },
+  {
+    id: 22,
+    name: "Dr. Tousif Bin Mamun",
+    specialty: "ENT Specialist",
+    image: "Images/dr_tousif_bin_mamun.jpg.jpeg",
+    bio: "MBBS, MCPS (ENT) Assistant Registrar (ENT) Chittagong Medical College & Hospital",
+    timing: "Saturday, Monday & Wednesday From 7.30 PM to 9:00 PM",
+    regNo: "A-75986"
+  },
+  {
+    id: 23,
+    name: "Dr. Himadri Mohajan",
+    specialty: "Psychiatrist",
+    image: "Images/dr_himadri_mohajan.jpg.jpeg",
+    bio: "MBBS, BCS (Health) MD (Psychiatry) Assistant Professor, Department of Psychiatry Chittagong Medical College & Hospital",
+    timing: "Sun, Tue & Thu: 4:00 PM – 7:00 PM",
+    regNo: ""
+  },
+  {
+    id: 24,
+    name: "Dr. Kazi Zohaida Noor",
+    specialty: "Oral and Dental Specialist",
+    image: "/placeholder.svg",
+    bio: "BDS (CIDC) PGT or Conservative Dentistry Oral & Dental Surgeon Chittagong Medical College Specialized in Root Canal Treatment Specialized in Smile Design",
+    timing: "Every day from 4:00 PM to 10:00 PM",
+    regNo: "A-99734"
   },
 ];
 
